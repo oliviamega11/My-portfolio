@@ -1,0 +1,137 @@
+@font-face {
+  font-family: general;
+  src: url(/Css/FontsFree-Net-AvenirLTStd-Book.ttf);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+body {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(15, 100px);
+  grid-auto-rows: minmax(100px, auto);
+  background-color: rgb(10, 10, 10);
+
+  header {
+    grid-column: 1/ 13;
+    max-height: 500px;
+    padding: 15px 10px;
+    z-index: 100;
+
+    .logo {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 750;
+      line-height: 34px;
+      position: relative;
+      color: #ffffff;
+      letter-spacing: 1.5px;
+      font-family: general;
+      margin-left: 5px;
+
+      b {
+        color: rgba(247, 211, 10, 0.952);
+        font-weight: bolder;
+      }
+    }
+    .menu-burger {
+      width: 3em;
+      height: 2.5em;
+      max-height: 2.5em;
+      position: relative;
+      float: right;
+      display: flex;
+      cursor: pointer;
+      top: 3px;
+
+      .menu-icon {
+        width: 80%;
+        height: 2px;
+        background: #ffffff;
+        position: absolute;
+        transition: all .2s ease-out;
+      }
+      #m-icon-2 {
+        top: 10px;
+        transition: all 0.5s ease-out;
+      }
+      #m-icon-3 {
+        top: 20px;
+        transition: all 0.5s ease-out;
+      }
+
+      .clicked {
+        display: none;
+        transition: display 0.5s ease-in;
+      }
+      .rotate-1 {
+        transform: rotate(-43deg);
+        top: 19.5px;
+        transition: transform 0.5s ease-out;
+      }
+      .rotate-2 {
+        transform: rotate(43deg);
+        right: 9px;
+        top: -5px;
+        transition: transform 0.5s ease-out;
+      }
+    }
+
+    .menu-items {
+      clear: both;
+      width: 100%;
+      max-height: auto;
+
+      ul {
+        // clear: both;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        max-height: 0;
+        transition: max-height 1s ease;
+      }
+      .open {
+        max-height: 100vh;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 20px;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          padding: 15px 5px;
+          color: #ffffff;
+          font-size: 22px;
+          display: block;
+        }
+
+        a:hover {
+          background-color: #0000008a;
+          transition: all 0.5s ease-in;
+          // border-radius: 10px;
+          color: rgba(247, 211, 10, 0.952);
+        }
+      }
+    }
+    
+    
+  }
+}
+@media screen and (min-width: 500px){
+
+}
