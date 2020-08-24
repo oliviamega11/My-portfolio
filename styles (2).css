@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: rgba(235, 218, 197, 0.562);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#txt {
+  color: #fdfeff;
+}
+
+header h1 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-variant: small-caps;
+  color: rgb(253, 253, 253);
+  font-family: "popper-SemiBold";
+  padding-top: 10px;
+}
+
+.nav-item {
+  background: rgba(0, 0, 0, 0.966);
+}
+li {
+  padding-top: 0px;
+}
+.dropdown:hover,
+.dropdown-toggle:hover,
+.btn:hover,
+.nav-item:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.856);
+  border-color: #a31616;
+  font-family: timesitalic;
+  text-transform: capitalize;
+}
+main {
+  width: 1200px;
+}
+section {
+  width: 680px;
+  float: left;
+  background-color: white;
+}
+section header {
+  background: none;
+  width: 680px;
+}
+/* Aside styling  */
+aside {
+  background: rgba(144, 238, 144, 0.281);
+  width: 430px;
+  height: 600px;
+  float: left;}
+  aside .card-head #Latest{
+    font-family: "poppings-regular";
+    font-size: 30px;
+    margin-top: 20px;
+    background: rgba(235, 59, 5, 0.932);}
+    #latest:hover{
+      background:whitesmoke;
+    }
+footer {
+  background: rgba(0, 0, 0, 0.63);
+  width: 1200px;
+  text-align: center;
+}
+footer p {
+  color: white;
+  padding: 30px 0px;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p a {
+  color: rgba(255, 255, 255, 0.767);
+  text-decoration: underline;
+  margin-left: 15px;
+  font-size: small;
+  font-weight: 580;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer p a:hover {
+  color: rgba(153, 11, 11, 0.521);
+}
+#form-card {
+  margin: 25px auto;
+  float: none;
+  font-family: "poppins-Regular";
+  border-radius: 15px;
+}
+/* Login Card style */
+#login-card {
+  margin: 30px auto;
+  border-radius: 15px;
+}
+#Login-btn {
+  text-shadow: 1px 2px 2px green;
+  color: white;
+  font-family: "poppins-Semibold";
+}
+#frg-psd {
+  font-family: "poppins-regular";
+}
+#sign-up-link {
+  margin-top: 20px;
+  font-family: "poppins-regular";
+}
+
+/* Sign up page style */
+#form-card #cardhead {
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(10, 10, 10, 0.678);
+  font-family: "poppins-SemiBold";
+}
+.form-control {
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 auto;
+}
+#terms,
+#p-p,
+.cookie,
+#login-pg {
+  text-transform: capitalize;
+  color: white;
+}
+#terms:hover,
+#p-p:hover,
+.cookie:hover,
+#login-pg:hover,
+#sign-up-link a:hover,
+#frg-psd a:hover {
+  color: rgb(19, 82, 163);
+}
+
+#custom-select {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+#radio-check {
+  margin-left: 43px;
+}
+#have-an-acct {
+  margin-top: 20px;
+}
+#reg-btn {
+  text-shadow: 1px 2px 2px green;
+  color: white;
+}
+#have-an-acct {
+  padding-bottom: 0;
+  margin-top: 9px;
+}
+#login-head {
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(10, 10, 10, 0.678);
+  font-family: "poppins-SemiBold";
+  font-weight: bold;
+}
+/*  */
+:root{
+  --color: green;
+}
